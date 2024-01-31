@@ -30,4 +30,18 @@ In summary:
 Time Complexity: O(n)
 Space Complexity: O(1)
 This solution is efficient with a linear time complexity and minimal space usage, making it a good approach for finding the maximum subarray sum.
+
+
+  Math.max(1, 1 + - 2) = 1 for i = 1;
+  Math.max(-3, -3 + 1) = -2 for i = 2
+  Math.max(4, 4+ (-3)) = 4 for i = 3
+  Math.max(-1, -1 + 4) = 3 for i = 4;
+  Math.max(2, 2 + 3) = 5 for i = 5;
+  Math.max(1, 1 + 5) = 6 for i = 6;
+  Math.max(-5, -5 + 5) = 0 for i = 7;
+  Math.max(4, 4 + 0) = 4 for i = 8
+
+
+
+
 */
