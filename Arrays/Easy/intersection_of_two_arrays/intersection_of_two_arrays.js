@@ -11,8 +11,8 @@ var intersection = function(nums1, nums2) {
     nums2 = Array.from(new Set([...nums2]));
     let result = [];
     for(let i = 0; i < nums1.length; i++) {
-        if(nums2.includes(nums1[i])) {
-            let index = nums2.indexOf(nums1[i]);
+        let index = nums2.indexOf(nums1[i]);
+        if(index > -1) {
             nums2.splice(index,1);
             result.push(nums1[i]);
         }
@@ -20,30 +20,19 @@ var intersection = function(nums1, nums2) {
     return result;
 };
 
-// const intersection = (nums1: Array<number>, nums2: Array<number>): Array<number> => {
-//     nums1.sort((a, b) => a - b);
-//     nums2.sort((a, b) => a - b);
-//     let intersection_of_arrays: Array<number> = [];
-//     for (let i: number = 0; i < nums1.length; i++) {
-//             for (let j: number = 0; j < nums2.length; j++) {
-//                     if (nums1[i] === nums2[j] && !intersection_of_arrays.includes(nums1[i])) {
-//                             intersection_of_arrays.push(nums1[i]);
-//                     } else if (nums1[i] < nums2[j]) {
-//                             break;
-//                     }
-//             }
-//     }
-//     return intersection_of_arrays;
-// };
+//using recursive method
+//   const intersect = (a1, a2, ...rest) => {
+//     const a12 = a1.filter(value => a2.includes(value))
+//     if (rest.length === 0) { return a12; }
+//     return intersect(a12, ...rest);
+//   };
+  
+
+//   function intersection (a, b) {
+//     const setA = new Set(a);
+//     return b.filter(value => setA.has(value));
 
 
 
-// Input
-// nums1 =
-// [1,2,2,1]
-// nums2 =
-// [2,2]
-// Output
-// [2]
-// Expected
-// [2]
+
+
