@@ -21,6 +21,10 @@ var maxAscendingSum = function(nums) {
     return maxSum;
 };
 
+console.log(
+    maxAscendingSum([5,10,15,2,3,4])
+)
+
 
 /*
 Time Complexity : O(n)
