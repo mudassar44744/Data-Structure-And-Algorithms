@@ -18,8 +18,6 @@ const findMaxConsecutiveOnes = (nums: Array<number>): number => {
         return maxConsecutiveOnes;
 };
 
-
-
 /*
 Time Complexity : O(n)
 Space Complexity : O(1)
