@@ -5,7 +5,7 @@
  * @return { number }
 */
  var maxProduct = function(nums) {
-        let sum = -11;
+        let sum = -Infinity;
         let temp = 0;
         for( let i=0; i<nums.length; i++ ) {
                 temp = nums[i];

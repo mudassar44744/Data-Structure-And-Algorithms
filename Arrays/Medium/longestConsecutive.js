@@ -3,7 +3,6 @@ Input: nums = [100,4,200,1,3,2]
 Output: 4
 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.
 https://leetcode.com/problems/longest-consecutive-sequence/
-https://www.youtube.com/watch?v=RlmR7CGyOk4&ab_channel=JSDev
 
 */
 /**
@@ -28,3 +27,25 @@ const longestConsecutive = nums => {
     return longest
       
 };
+
+
+//Another approach 
+
+const longestConsecutive2 = nums => {
+   
+    if(nums.length === 0) return [];
+     let max = 1;
+    nums.sort((a,b)=>a-b);
+    nums = Array.from(new Set([...nums]));
+ 
+    let count = 1;
+    for(let i = nums.length - 1; i >= 0; i--) {
+        let number = nums[i];
+        if(number - 1  === nums[i - 1]) {
+            count++;
+            max = Math.max(count,max);
+        } else count = 1;
+    }
+    return max;
+       
+ };
