@@ -7,7 +7,7 @@
  */
 var findDuplicates = function(array) {
     const countMap = {};
-  const duplicates = [];
+    const duplicates = [];
 
   for (let i = 0; i < array.length; i++) {
      const num = array[i];
