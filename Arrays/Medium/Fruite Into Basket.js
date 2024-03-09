@@ -33,6 +33,14 @@ var totalFruit = function(fruits) {
 };
 
 
+console.log(
+//    totalFruit([1,2,1])
+)
+console.log(
+    totalFruit([0,2,1,2,2])
+)
+
+
 /*
 left = start
 i = end
