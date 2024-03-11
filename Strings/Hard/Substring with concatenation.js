@@ -1,0 +1,2 @@
+//https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/
+//https://leetcode.com/problems/substring-with-concatenation-of-all-words/solutions/4580127/30-substring-with-concatenation-of-all-words-javascript/
