@@ -10,5 +10,27 @@ function checkMostRepeaterChar(str) {
 }
 
 console.log(
-    checkMostRepeaterChar("aaaabbbTTTTTTkkkTTTkkkTTTkkkTTT")
+    checkMostRepeaterChar("aaaabbbTTTTTTkkkTTTkkk,,,,,,,,,,,,,,,,,,,,,,,,11111111111111111111111111111111111TTTkkkTTT")
 )
+
+
+function checkMostRepeaterChar(str) {
+    if(str.length > 100) return "invalid string"
+
+    let hashString = {};
+    for(let i = 0; i < str.length; i++) {
+        let char = str[i];
+        if(/[A-Za-z]/.test(char))
+        hashString[char] ? hashString[char]++ : hashString[char] = 1;
+    }
+
+    let mostRepeated = Object.keys(hashString).map((key)=> [hashString[key],key]).sort((a,b)=> b[0] - a[0]);
+
+    return mostRepeated[0][1];
+}
+
+/*
+Time Complexity o(n)
+Space Complexity O(n)
+
+*/
