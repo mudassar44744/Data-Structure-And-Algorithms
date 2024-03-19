@@ -25,6 +25,7 @@ const maxSubArrayLen = (nums, k) => {
     }
 
     return maxLen;
+
 };
 
 // Test case
@@ -54,11 +55,12 @@ map = {
 0 : 3 
 }
 
-[0 1 2]
-[-2+(-1)+(2)] = 1
-
+sum - k =  -1 - 1 = -2 already on 0th index 
+i = 2 then minus i - sumMap.get(sum - k)
+2 - 0 = 2 (-1 + 2) = 1 which is equal to k 
+when i = 2 then running sum (-1 + 2) = 1 
+*/
 const nums2 = [-2,-1,2,1];
 const k2 = 1;
 console.log(maxSubArrayLen(nums2, k2)); // Output: 2
 
-*/

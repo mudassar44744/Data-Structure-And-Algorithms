@@ -2,7 +2,7 @@
 
 // Time Complexity :  O(n)
 // Space Complexity : O(1)
-var characterReplacement = function(s, k) {
+var characterReplacement1 = function(s, k) {
     // Make a map of size 26...
     var map = [26]
     // Initialize largestCount, maxlen & beg pointer...
@@ -55,3 +55,7 @@ const characterReplacement = (s, k) => {
 
 	return max;
 };
+
+console.log(
+    characterReplacement("ABAB",2)
+)
